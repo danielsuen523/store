@@ -6,3 +6,4 @@ stripe:
     enabled: true
     timeout: 1000
     supported-currencies: HKD,USD
+payment-gateway: stripe
