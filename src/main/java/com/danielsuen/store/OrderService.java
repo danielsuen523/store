@@ -13,6 +13,7 @@ public class OrderService {
     @Autowired
     public OrderService(@Qualifier("stripe") PaymentService paymentService) {
         this.paymentService = paymentService;
+        System.out.println("OrderService created");
     }
 
     public void placeOrder() {
