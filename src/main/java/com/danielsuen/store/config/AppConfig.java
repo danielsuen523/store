@@ -1,9 +1,12 @@
-package com.danielsuen.store;
+package com.danielsuen.store.config;
 
+import com.danielsuen.store.service.OrderService;
+import com.danielsuen.store.service.PayPalPaymentService;
+import com.danielsuen.store.service.PaymentService;
+import com.danielsuen.store.service.StripePaymentService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Scope;
 
 @Configuration
 public class AppConfig {

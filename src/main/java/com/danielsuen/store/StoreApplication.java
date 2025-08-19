@@ -1,5 +1,6 @@
 package com.danielsuen.store;
 
+import com.danielsuen.store.service.OrderService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;

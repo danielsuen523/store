@@ -1,4 +1,4 @@
-package com.danielsuen.store;
+package com.danielsuen.store.service;
 
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;

@@ -1,4 +1,4 @@
-package com.danielsuen.store;
+package com.danielsuen.store.controller;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;

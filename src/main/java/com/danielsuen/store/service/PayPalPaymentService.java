@@ -1,6 +1,4 @@
-package com.danielsuen.store;
-
-import org.springframework.stereotype.Service;
+package com.danielsuen.store.service;
 
 //@Service("paypal")
 public class PayPalPaymentService implements PaymentService{

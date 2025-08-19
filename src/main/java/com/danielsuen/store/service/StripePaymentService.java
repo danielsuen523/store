@@ -1,8 +1,6 @@
-package com.danielsuen.store;
+package com.danielsuen.store.service;
 
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Primary;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 
