@@ -7,3 +7,6 @@ stripe:
     timeout: 1000
     supported-currencies: HKD,USD
 payment-gateway: stripe
+emailServer:
+    host: 127.0.0.1
+    port: 8080
