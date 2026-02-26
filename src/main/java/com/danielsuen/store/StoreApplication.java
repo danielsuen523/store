@@ -1,6 +1,7 @@
 package com.danielsuen.store;
 
 import com.danielsuen.store.entities.Address;
+import com.danielsuen.store.entities.Tag;
 import com.danielsuen.store.entities.User;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -33,6 +34,10 @@ public class StoreApplication {
                 .zip("12345")
                 .build();
 
+        //
         user.addAddress(address);
+
+
+        user.addTag("tag1");
     }
 }

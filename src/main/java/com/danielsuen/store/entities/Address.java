@@ -30,7 +30,7 @@ public class Address {
     private String state;
 
     @ManyToOne
-    @JoinColumn(name = "user_id")
+    @JoinColumn(name = "user_id") // annotate the foreign key
     @ToString.Exclude // exclude this field when calling toString()
     private User user;
 }
