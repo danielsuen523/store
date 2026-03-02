@@ -1,6 +1,7 @@
 package com.danielsuen.store;
 
 import com.danielsuen.store.entities.Address;
+import com.danielsuen.store.entities.Profile;
 import com.danielsuen.store.entities.Tag;
 import com.danielsuen.store.entities.User;
 import org.springframework.boot.SpringApplication;
@@ -37,7 +38,13 @@ public class StoreApplication {
         //
         user.addAddress(address);
 
-
         user.addTag("tag1");
+
+        var profile = Profile.builder()
+                .bio("bio")
+                .build();
+        user.setProfile(profile);
+        profile.setUser(user);
+        System.out.println(profile);
     }
 }

@@ -1,14 +1,17 @@
 package com.danielsuen.store.entities;
 
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.time.LocalDate;
 
 @Getter
 @Setter
 @Entity
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
+@ToString
 @Table(name = "profiles")
 public class Profile {
     @Id
@@ -27,4 +30,10 @@ public class Profile {
 
     @Column(name = "loyalty_points")
     private int loyaltyPoints;
+
+    @OneToOne
+    @JoinColumn(name = "id")
+    @MapsId // use the same column as primary key and foreign key
+    @ToString.Exclude
+    private User user;
 }
