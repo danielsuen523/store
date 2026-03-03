@@ -20,6 +20,9 @@ public class Product {
     @Column(name = "namw")
     private String name;
 
+    @Column(name = "description")
+    private String description;
+
     @Column(name = "price")
     private BigDecimal price;
 
