@@ -29,7 +29,7 @@ public class Address {
     @Column(name = "state")
     private String state;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id") // annotate the foreign key
     @ToString.Exclude // exclude this field when calling toString()
     private User user;

@@ -1,4 +1,7 @@
 package com.danielsuen.store.repositories;
 
-public interface AddressRepository {
+import com.danielsuen.store.entities.Address;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface AddressRepository extends JpaRepository<Address, Long> {
 }
