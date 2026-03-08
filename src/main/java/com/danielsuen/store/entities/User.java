@@ -31,7 +31,7 @@ public class User {
     @Column(nullable = false, name = "password")
     private String password;
 
-    @OneToMany(mappedBy = "user")
+    @OneToMany(mappedBy = "user", cascade = CascadeType.PERSIST) // will also save Address when User is saved
     @Builder.Default
     private List<Address> addresses = new ArrayList<>();
 

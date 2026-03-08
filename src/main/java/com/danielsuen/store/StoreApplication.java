@@ -12,5 +12,7 @@ public class StoreApplication {
 
 	public static void main(String[] args) {
         ApplicationContext context = SpringApplication.run(StoreApplication.class, args);
+        var userServices = context.getBean(UserServices.class);
+        userServices.persistRelated();
     }
 }

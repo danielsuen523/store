@@ -1,5 +1,6 @@
 package com.danielsuen.store.services;
 
+import com.danielsuen.store.entities.Address;
 import com.danielsuen.store.entities.User;
 import com.danielsuen.store.repositories.AddressRepository;
 import com.danielsuen.store.repositories.ProfileRepository;
@@ -35,6 +36,14 @@ public class UserServices {
 
     public void fetchAddresses() {
         var address = addressRepository.findAll();
+    }
+
+    public void persistRelated(){
+        var user = User.builder().name("Daniel").password("password").email("mail").build();
+        var address = Address.builder().city("c").state("s").street("street").zip("z").build();
+
+        user.addAddress(address);
+        userRepository.save(user);
     }
 }
 
